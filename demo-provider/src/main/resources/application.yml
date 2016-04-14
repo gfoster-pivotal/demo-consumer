@@ -1,0 +1,13 @@
+server:
+  port: 34000
+eureka: 
+  instance:
+    hostname: localhost
+    metadata-map:    
+      region: local
+      zone: laptop
+  client:
+    registerWithEureka: true
+    fetchRegistry: true   # Not necessary
+    serviceUrl:
+      defaultZone: http://localhost:35000/eureka/  

@@ -1,0 +1,12 @@
+server:
+  port: 35000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+       defaultZone: http://localhost:35000/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
